@@ -1,14 +1,9 @@
 import { Component, EventEmitter, Output, Input, inject } from '@angular/core';
 import { dummyTasks } from '../../../dummy-tasks';
-import { Task } from '../task.model';
-import { FormsModule } from '@angular/forms';
-import { type NewTask } from '../new-task.model';
 import { TasksService } from '../../tasks.service';
 
 @Component({
   selector: 'app-create',
-  standalone: true,
-  imports: [FormsModule],
   templateUrl: './create.component.html',
   styleUrl: './create.component.css'
 })
